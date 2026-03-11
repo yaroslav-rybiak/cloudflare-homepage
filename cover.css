@@ -25,6 +25,12 @@ body {
   max-width: 42em;
 }
 
+.pages-link {
+  margin: 10px;
+  text-decoration: none;
+}
+
+
 
 /*
  * Header
