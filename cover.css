@@ -89,6 +89,29 @@ a:focus-visible {
   display: block;
 }
 
+/* Keep all five icons on one line on phones (~320–420px wide). */
+@media (max-width: 420px) {
+  .pages-link {
+    margin: 10px 4px;
+  }
+}
+
+/* Smallest phones (~320px): tighter padding, smaller tagline and icons. */
+@media (max-width: 360px) {
+  main {
+    padding: 0;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .pages-link svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pages-link {
     transition: none;
