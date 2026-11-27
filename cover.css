@@ -1,6 +1,7 @@
 :root {
   --bg: #212529;
   --fg: #fff;
+  --fg-muted: rgba(255, 255, 255, .7);
   --link: #0d6efd;
   --link-hover: #6ea8fe;
 }
@@ -51,6 +52,12 @@ h1 {
 
 p {
   margin: 0 0 1rem;
+}
+
+.tagline {
+  margin-bottom: .75rem;
+  font-size: 1.125rem;
+  color: var(--fg-muted);
 }
 
 a {
