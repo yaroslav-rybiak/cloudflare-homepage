@@ -68,6 +68,15 @@ a:hover {
   color: var(--link-hover);
 }
 
+/* Text links need 4.5:1 contrast on the dark background (the icons only need 3:1). */
+p a {
+  color: var(--link-hover);
+}
+
+p a:hover {
+  color: var(--fg);
+}
+
 a:focus-visible {
   outline: 2px solid var(--fg);
   outline-offset: 4px;

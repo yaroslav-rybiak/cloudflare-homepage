@@ -1,0 +1,19 @@
+{
+  "name": "rybiak-com-tests",
+  "private": true,
+  "description": "Automated checks for rybiak.com. Lives in tests/ so Cloudflare Pages doesn't treat the site as a Node project.",
+  "scripts": {
+    "serve": "node server.js",
+    "validate": "html-validate --config .htmlvalidate.json ../index.html ../404.html",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "e2e": "start-server-and-test serve http://127.0.0.1:8788 cy:run",
+    "test": "npm run validate && npm run e2e"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.1",
+    "cypress": "16.4.0",
+    "html-validate": "11.23.0",
+    "start-server-and-test": "3.0.13"
+  }
+}
